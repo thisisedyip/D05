@@ -7,10 +7,18 @@
 # Imports
 
 # Body
+def readwords():
+    fin = open('words.txt', 'r')
+    line = fin.readline()
+
+    for line in fin:
+        if len(line) >= 20:
+            print(line)
 
 
 ##############################################################################
 def main():
+    readwords()
     pass  # Call your functions here.
 
 if __name__ == '__main__':
